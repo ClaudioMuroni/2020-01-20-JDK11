@@ -18,6 +18,7 @@ public class EntryPoint extends Application {
 		ArtsmiaController controller = loader.getController();
 		Model model = new Model();
 		controller.setModel(model);
+		controller.popolaTendinaRuoli();
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("/styles/Styles.css").toExternalForm());
 		stage.setScene(scene);
